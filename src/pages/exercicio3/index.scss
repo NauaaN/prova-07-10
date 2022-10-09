@@ -1,0 +1,48 @@
+.homeex3{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .ex3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .inputs3{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .thebotton3{
+        display: flex;
+        flex-direction: column;
+    }
+    .input3{
+        border-radius: 20px;
+        margin: 1em;
+        padding: 5px 15px;
+        width: 20em;
+    }
+    .butao3{
+        margin: 1em;
+        font-size: 1em;
+        background-color: red;
+        border-radius: 20px;
+        text-decoration: none;
+        color: inherit;
+        padding: 10px 20px;
+        border: none;
+    }
+    .butao3:hover{
+        background-color: black;
+        color: white;
+        transition: 0.4s;
+    }
+    .resposta{
+        text-align: center;
+        font-size: 1.5em;
+        color: red;
+        font-family:Arial, Helvetica, sans-serif;
+    }

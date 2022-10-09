@@ -19,18 +19,21 @@ export default function Exercicio2(){
     }, [resp])
 
     return(
-        <div>
-       
-            <h1>Exercicio 2</h1>
-        <div>
-             <input type='number' placeholder="informe o dia" value={dia} onChange={e => setDia(e.target.value)}/>
-            <input type='text' placeholder="informe o mes" value={mes} onChange={e => setMes(e.target.value)} />
-            <button onClick={libra}>VERIFICAR</button>
-         </div>
-         <div>
-         {resp}
-         </div>
-        </div>
+     <div className="homeex2">
+             <div className="ex2">          
+                <h1 className="txt">Exercicio 2</h1>
+                     <div className="inputs2">
+                         <input type='number' className="input2" placeholder="informe o dia" value={dia} onChange={e => setDia(e.target.value)}/>
+                         <input type='text'className="input2"  placeholder="informe o mes" value={mes} onChange={e => setMes(e.target.value)} />
+                     </div>
+                    <div className="thebuton2">
+                         <button className="butao2" onClick={libra}>VERIFICAR</button>
+                     </div>
+                         <div className="resposta">
+                            {resp}
+                         </div>
+            </div>
+     </div>
         
     )
 }

@@ -22,15 +22,18 @@ const [resp, setResp] = useState("")
     }, [resp])
 
     return(
-        <div>
-             <h1>Exercicio 3</h1>
-
-            <div>
-            <input type='text' placeholder="informe as gramas " value={gramas} onChange={e => setGramas(e.target.value)} />
-            <button onClick={calcularSorvete}>VERIFICAR PREÇO</button>
-            </div>
-            <div>
-              {resp}
+        <div className="homeex3">
+             <div className="ex3">
+                <h1 className="txt">Exercicio 3</h1>
+                    <div className="inputs3">
+                        <input type='text' className="input3" placeholder="informe as gramas " value={gramas} onChange={e => setGramas(e.target.value)} />
+                    </div>
+                        <div className="thebutton3">
+                             <button className='butao3' onClick={calcularSorvete}>VERIFICAR PREÇO</button>
+                         </div>
+                             <div className="resposta">
+                                 {resp}
+                            </div>
              </div>
         </div>
     )

@@ -3,13 +3,15 @@ import './App.scss';
 
 function Home() {
   return (
-    <div className="home">
-        <div>
-          <h1>Prova</h1>
-          <div>
-          <Link to='/ex1'> ex1 </Link>
-          <Link to='/ex2'> ex2 </Link>
-          <Link to='/ex3'> ex3 </Link>
+    <div className="home-page">
+        <div className='home'>
+          <h1 className='txt'>Prova 4° Bimestre</h1>
+          <p className='txt1'>Matheus Caldeira</p>
+          <p className='txt1'>Nauan Santos</p>
+          <div className='links'>
+          <Link className='exericios' to='/ex1'> Exercicio 1 </Link>
+          <Link className='exericios' to='/ex2'> Exercicio 2 </Link>
+          <Link className='exericios' to='/ex3'> Exercicio 3 </Link>
           </div>
         </div>
     </div>
