@@ -16,18 +16,18 @@ export default function SalarioLiquido(){
     }
 
         return(
-            <div>
-                <div>
-                    <h1>Exercicio 4</h1>
-                    <div>
-                        <input type='number' placeholder='insira o salario' value={salario} onChange={e => setSalario (Number(e.target.value))}/>
-                        <input type='number' placeholder='insira o bonus' value={bonus} onChange={e => setBonus(Number(e.target.value))}/>
-                        <input type='number' placeholder='insira o desconto' value={desconto} onChange={e => setDesconto(Number(e.target.value))}/>
+            <div className='homeex4'>
+                <div className='ex4'>
+                    <h1 className='txt'>Exercicio 4</h1>
+                    <div className='inputs4'>
+                        <input className='input4' type='number' placeholder='insira o salario' value={salario} onChange={e => setSalario (Number(e.target.value))}/>
+                        <input className='input4' type='number' placeholder='insira o bonus' value={bonus} onChange={e => setBonus(Number(e.target.value))}/>
+                        <input className='input4' type='number' placeholder='insira o desconto' value={desconto} onChange={e => setDesconto(Number(e.target.value))}/>
                     </div>
-                    <div>
-                        <button onClick={calcularSalario}>CALCULAR</button>
+                    <div className='thebutton4'>
+                        <button className='butao4' onClick={calcularSalario}>CALCULAR</button>
                     </div>
-                    <div>{resp}</div>
+                    <div className='resposta'>{resp}</div>
                 </div>
             </div>
         )

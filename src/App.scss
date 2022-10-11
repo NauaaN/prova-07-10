@@ -18,15 +18,15 @@
 
 }
 .txt{
-    font-size: 3em;
+    font-size: 3.5em;
 }
 .txt1{
-    font-size: 1em;
+    font-size: 1.5em;
     margin: 0;
     
 }
 .links{
-    margin: 3em;
+    margin: 1em;
 }
 
 .exericios{
@@ -42,6 +42,9 @@
     background-color: black;
     color: white;
     transition: 0.4s;
+}
+.txt2{
+    font-size: 1.5em;
 }
 ::selection{
     background-color: rgba(255, 0, 0, 0.753);

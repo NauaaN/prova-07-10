@@ -8,10 +8,17 @@ function Home() {
           <h1 className='txt'>Prova 4° Bimestre</h1>
           <p className='txt1'>Matheus Caldeira</p>
           <p className='txt1'>Nauan Santos</p>
+          <p className='txt2'>Dia 07/10</p>
           <div className='links'>
           <Link className='exericios' to='/ex1'> Exercicio 1 </Link>
           <Link className='exericios' to='/ex2'> Exercicio 2 </Link>
           <Link className='exericios' to='/ex3'> Exercicio 3 </Link>
+          </div>
+          <p className='txt2'>Dia 11/10</p>
+          <div className='links'>
+          <Link className='exericios' to='/ex4'> Exercicio 4 </Link>
+          <Link className='exericios' to='/ex5'> Exercicio 5 </Link>
+          <Link className='exericios' to='/ex6'> Exercicio 6 </Link>
           </div>
         </div>
     </div>

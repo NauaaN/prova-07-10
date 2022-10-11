@@ -28,16 +28,16 @@ export default function Exercicio6(){
     }
 
     return(
-        <div>
-            <div>
-                <h1>Exercicio 6</h1>
-                <div>
-                    <input type='number' placeholder='insira a temperatura' value={temperatura} onChange={e => setTemperatura(e.target.value)}/>
+        <div className='homeex6'>
+            <div className='ex6'>
+                <h1 className='txt'>Exercicio 6</h1>
+                <div className='inputs6'>
+                    <input type='number' className='input6' placeholder='insira a temperatura' value={temperatura} onChange={e => setTemperatura(e.target.value)}/>
                 </div>
-                <div>
-                    <button onClick={febre}>CALCULAR</button>
+                <div className='thebutton6'>
+                    <button className='butao6' onClick={febre}>CALCULAR</button>
                 </div>
-                <div>
+                <div className='resposta'>
                     {resp}
                 </div>
             </div>

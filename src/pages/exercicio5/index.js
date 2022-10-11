@@ -15,18 +15,18 @@ export default function Tanque(){
         
     }
     return(
-        <div>
-            <div>
-                <h1>Exercicio 5</h1>
-                <div>
-                    <input type='number' placeholder='insira a capacidade' value={capacidade} onChange={e => setCapacidade(e.target.value)}/>
-                    <input type='number' placeholder='insira a consumo' value={consumo} onChange={e => setConsumo(e.target.value)}/>
-                    <input type='number' placeholder='insira a distancia' value={distancia} onChange={e => setDistancia(e.target.value)}/>
+        <div className='homeex5'>
+            <div className='ex5'>
+                <h1 className='txt'>Exercicio 5</h1>
+                <div className='inputs5'>
+                    <input className='input5' type='number' placeholder='insira a capacidade' value={capacidade} onChange={e => setCapacidade(e.target.value)}/>
+                    <input className='input5' type='number' placeholder='insira a consumo' value={consumo} onChange={e => setConsumo(e.target.value)}/>
+                    <input className='input5' type='number' placeholder='insira a distancia' value={distancia} onChange={e => setDistancia(e.target.value)}/>
                 </div>
-                <div>
-                    <button onClick={calcularParadas}>CALCULAR</button>
+                <div className='thebutton5'>
+                    <button className='butao5' onClick={calcularParadas}>CALCULAR</button>
                 </div>
-                <div>{resp}</div>
+                <div className='resposta'>{resp}</div>
             </div>
         </div>
     )
