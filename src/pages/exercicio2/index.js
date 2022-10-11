@@ -14,9 +14,7 @@ export default function Exercicio2(){
            setResp ("nao, você não é de libra ")
         }
     }
-    useEffect(() =>{
-        libra()
-    }, [resp])
+
 
     return(
      <div className="homeex2">

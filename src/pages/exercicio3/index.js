@@ -17,9 +17,6 @@ const [resp, setResp] = useState("")
 
     }
 
-    useEffect(() =>{
-        calcularSorvete()
-    }, [resp])
 
     return(
         <div className="homeex3">

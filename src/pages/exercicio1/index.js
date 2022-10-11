@@ -14,9 +14,7 @@ const [resp, setResp] = useState();
       let resposta= total - desconto;
       setResp(resposta);
     }
-    useEffect(() =>{
-        calcAcai()
-    }, [resp])
+
 
     return(
         <div className="homeex1">
