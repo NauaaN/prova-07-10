@@ -19,7 +19,13 @@ function Home() {
           <Link className='exericios' to='/ex4'> Exercicio 4 </Link>
           <Link className='exericios' to='/ex5'> Exercicio 5 </Link>
           <Link className='exericios' to='/ex6'> Exercicio 6 </Link>
-          </div>
+        </div>
+        <p className='txt2'>Dia 14/10</p>
+          <div className='links'>
+          <Link className='exericios' to='/ex7'> Exercicio 7 </Link>
+          <Link className='exericios' to='/ex8'> Exercicio 8 </Link>
+
+        </div>
         </div>
     </div>
   );
