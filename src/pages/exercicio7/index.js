@@ -20,7 +20,7 @@ export default function Exercicio7() {
         else if ( ganhos * 21/100>  gastos <= 49/100  ) {
             setResp('Muito bem seus gastos não ultrapassaram metade dos ganhos')
         }
-        else if ( ganhos * 0/100> gastos <= 20/100  ) {
+        else if ( ganhos * 0/100>  gastos <= 20/100  ) {
             setResp('Parabens você esta gerenciando bem o seu orçamento')
         }
         else {
@@ -30,17 +30,16 @@ export default function Exercicio7() {
     }
 
     return (
-        
         <div>
-           <div className='homeex5'>
-            <div className='ex5'>
+           <div className='homeex7'>
+            <div className='ex7'>
                 <h1 className='txt'>Exercicio 7</h1>
-                <div className='inputs5'>
-                    <input className='input5' type='number' placeholder='insira os ganhos' value={ganhos} onChange={e => setGanhos(e.target.value)}/>
-                    <input className='input5' type='number' placeholder='insira os gastos' value={gastos} onChange={e => setGastos(e.target.value)}/>
+                <div className='inputs7'>
+                    <input className='input7' type='number' placeholder='insira os ganhos' value={ganhos} onChange={e => setGanhos(e.target.value)}/>
+                    <input className='input7' type='number' placeholder='insira os gastos' value={gastos} onChange={e => setGastos(e.target.value)}/>
                 </div>
-                <div className='thebutton5'>
-                    <button className='butao5' onClick={sitOrcamento}>CALCULAR</button>
+                <div className='thebutton7'>
+                    <button className='butao7' onClick={sitOrcamento}>CALCULAR</button>
                 </div>
                 <div className='resposta'>{resp}</div>
             </div>

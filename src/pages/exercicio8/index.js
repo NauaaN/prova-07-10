@@ -9,31 +9,32 @@ export default function Exercicio8() {
     const [resp, setResp] = useState('');
 
     function cinema() {
-        if (diaSemana != 'quarta feira' && nacional != true) {
+        if (diaSemana != 'quarta feira') {
             setResp('O total a se pagar é de R$ '+ Number(inteiras* 28.50+ meias*14.25 ) )
            
        }
-        else if (diaSemana == 'quarta feira' && nacional != true) {
+        else if (diaSemana == 'quarta feira') {
             setResp('O total a se pagar é de R$ '+  Number(inteiras * 14.25 + meias * 14.25 ))
         }
             
-        else if (diaSemana == 'quarta feira' && nacional == true) {
+        if (nacional == true) {
             setResp('O total a se pagar é de R$ '+ Number( inteiras*5 + meias * 5 ) )
         }
     }
     return (
         <div>
-        <div className='homeex5'>
-         <div className='ex5'>
+        <div className='homeex8'>
+         <div className='ex8'>
              <h1 className='txt'>Exercicio 8</h1>
-             <div className='inputs5'>
-                 <input className='input5' type='number' placeholder='insira quantidade de inteiras' value={inteiras} onChange={e => setInteiras(Number(e.target.value))}/>
-                        <input className='input5' type='number' placeholder='insira quantidade de meias' value={meias} onChange={e => setMeias(Number(e.target.value))} />
-                        <input className='input5' type='text' placeholder='insira o dia da semana' value={diaSemana} onChange={e => setDiaSemana(e.target.value)} />
-                        <input className='input5' type='checkbox' placeholder='insira a nacionalidade do filme' checked={nacional} onChange={e => setNacional(e.target.checked)}/>
+             <div className='inputs8'>
+                 <input className='input8' type='number' placeholder='insira quantidade de inteiras' value={inteiras} onChange={e => setInteiras(Number(e.target.value))}/>
+                        <input className='input8' type='number' placeholder='insira quantidade de meias' value={meias} onChange={e => setMeias(Number(e.target.value))} />
+                        <input className='input8' type='text' placeholder='insira o dia da semana' value={diaSemana} onChange={e => setDiaSemana(e.target.value)} />
              </div>
-             <div className='thebutton5'>
-                 <button className='butao5' onClick={cinema}>CALCULAR</button>
+             <p className='txt1'>É nacional?</p>
+             <input className='checkk' type='checkbox' checked={nacional} onChange={e => setNacional(e.target.checked)}/>
+             <div className='thebutton8'>
+                 <button className='butao8' onClick={cinema}>CALCULAR</button>
              </div>
              <div className='resposta'>{resp}</div>
          </div>
