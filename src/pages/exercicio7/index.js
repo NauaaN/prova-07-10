@@ -6,25 +6,28 @@ export default function Exercicio7() {
     const [ganhos, setGanhos] = useState();
     const [gastos, setGastos] = useState();
     const [resp, setResp] = useState();
+    const [ test, setTest] = useState();
     
     function sitOrcamento() {
-        if (gastos > ganhos) { 
-            setResp('Orçamento comprpmetido');
+        let porcentagem = gastos/ganhos *100
+        if(gastos > ganhos){
+            setResp('Orçamento comprpmetido')
         }
-        else if (ganhos * 81/100 > gastos <= 50/100 ) {
+
+        if (porcentagem > 81 && porcentagem <= 100 ) {
             setResp('Cuidado seu orçamento pode ficar comprometido')
         }
-        else if ( ganhos * 50/100>  gastos <=80/100  ) {
+        else if ( porcentagem > 50 &&  porcentagem <= 80 ) {
             setResp('Atenção conter os gastos')
         }
-        else if ( ganhos * 21/100>  gastos <= 49/100  ) {
+        else if ( porcentagem > 21 && porcentagem <= 49 ) {
             setResp('Muito bem seus gastos não ultrapassaram metade dos ganhos')
         }
-        else if ( ganhos * 0/100>  gastos <= 20/100  ) {
+        else if ( porcentagem > 0 && porcentagem <= 21 ) {
             setResp('Parabens você esta gerenciando bem o seu orçamento')
         }
         else {
-            setResp('invalido')
+            setResp('Orçamento invalido')
         }
           
     }
