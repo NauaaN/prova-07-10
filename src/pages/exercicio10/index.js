@@ -11,23 +11,27 @@ export default function Exercicio9() {
     }
 
     return (
-        <div>
-            <div>
-                <h1>Exercicio 10</h1>
-            </div>
-            <div>
+        <div className="homeex10">
+            <div className="ex10">
+                <h1 className="txt">Exercicio 10</h1>
+            
+            <div className="inputs10">
                 <input
+                    className="input10"
                     type="number"
                     placeholder="insira o numero de inicio"
                     value={qntd}
                     onChange={(e) => setQntd(e.target.value)}/>
             </div>
 
-            <div>
-                <button onClick={Listar}>VERIFICAR</button>
+            <div className="thebuton10">
+                <button className="butao10" onClick={Listar}>VERIFICAR</button>
             </div>
 
-            <div>{resp}</div>
+            <div className="resposta">
+                {resp}
+            </div>
+            </div>
         </div>
     );
 }

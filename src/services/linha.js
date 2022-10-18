@@ -1,7 +1,9 @@
 export default function DesenhoLinha(qntd) {
     let x = [];
-    for (let i = 0; i <= qntd; i++) {
-        x.push(" * ");
+    for (let i = 1; i <= qntd; i++) {
+        x.push(" *");
     }
-    return x;
+    if(qntd < 0)
+    return("Digite um numero valido!");
+    else return x;
 }

@@ -12,27 +12,29 @@ export default function Exercicio9() {
     }
 
     return (
-        <div>
-            <div>
-                <h1>Exercicio 9</h1>
-                <div>
+        <div className="homeex9">
+            <div className="ex9">
+                <h1 className="txt">Exercicio 9</h1>
+                <div className="inputs9">
                     <input
+                        className="input9"
                         type="number"
                         placeholder="insira o numero de inicio"
                         value={inicio}
-                        onChange={(e) => setInicio(e.target.value)}/>
+                        onChange={(e) => setInicio(Number(e.target.value))}/>
                     <input
+                        className="input9"
                         type="number"
                         placeholder="insira o numero de fim"
                         value={fim}
-                        onChange={(e) => setFim(e.target.value)}/>
+                        onChange={(e) => setFim(Number(e.target.value))}/>
                 </div>
 
-                <div>
-                    <button onClick={Listar}>VERIFICAR</button>
+                <div className="thebutton9">
+                    <button className= "butao9"onClick={Listar}>VERIFICAR</button>
                 </div>
 
-                <div>{resp}</div>
+                <div className="resposta">{resp}</div>
             </div>
         </div>
     );

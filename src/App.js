@@ -26,6 +26,13 @@ function Home() {
           <Link className='exericios' to='/ex8'> Exercicio 8 </Link>
 
         </div>
+        <p className='txt2'>Dia 16/10</p>
+          <div className='links'>
+          <Link className='exericios' to='/ex9'> Exercicio 9 </Link>
+          <Link className='exericios' to='/ex10'> Exercicio 10 </Link>
+          <Link className='exericios' to='/ex11'> Exercicio 11 </Link>
+
+        </div>
         </div>
     </div>
   );
