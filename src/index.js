@@ -14,6 +14,7 @@ import Exercicio8 from './pages/exercicio8';
 import Exercicio9 from './pages/exercicio9';
 import Exercicio10 from './pages/exercicio10';
 import Exercicio11 from './pages/exercicio11';
+import Exercicio12 from './pages/exercicio12';
 
 
 
@@ -35,6 +36,7 @@ root.render(
     <Route path='/ex9' element={<Exercicio9 />} />
     <Route path='/ex10' element={<Exercicio10 />} />
     <Route path='/ex11' element={<Exercicio11 />} />
+    <Route path='/ex12' element={<Exercicio12 />} />
     
     </Routes>
     </BrowserRouter>
