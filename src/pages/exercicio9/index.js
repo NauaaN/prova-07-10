@@ -34,7 +34,7 @@ export default function Exercicio9() {
                     <button className= "butao9"onClick={Listar}>VERIFICAR</button>
                 </div>
 
-                <div className="resposta">{resp}</div>
+                <div className="resposta9"> {resp}</div>
             </div>
         </div>
     );
