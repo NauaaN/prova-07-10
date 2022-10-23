@@ -13,7 +13,3 @@ export default function Cafeeeeee(estudantes, litros, mililitrosConsumidos) {
         }
     }
 
-
-
-let c = Cafeeeeee(2, 1, 2000);
-console.log(c);

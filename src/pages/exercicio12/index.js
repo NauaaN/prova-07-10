@@ -13,12 +13,12 @@ export default function Exercicio12() {
  }
     return (
 
-        <div className='homeex11'>
-        <div className='ex11'>
+        <div className='homeex12'>
+        <div className='ex12'>
             <h1 className='txt'>Exercicio 12</h1>
-            <div className='inputs11'>
+            <div className='inputs12'>
                 <input
-                    className='input11'
+                    className='input12'
                     type="number"
                     placeholder="insira o numero de estudantes"
                     value={estudantes}
@@ -26,7 +26,7 @@ export default function Exercicio12() {
             </div>
             <div>
                 <input
-                    className='input11'
+                    className='input12'
                     type="number"
                     placeholder="insira a capacidade de litros  "
                     value={litros}
@@ -35,7 +35,7 @@ export default function Exercicio12() {
                 
                 <div>
                 <input
-                    className='input11'
+                    className='input12'
                     type="number"
                     placeholder="insira os mililitros consumidos por cada aluno"
                     value={mililitrosConsumidos}
@@ -43,8 +43,8 @@ export default function Exercicio12() {
             </div>
 
 
-            <div className='thebutton11'>
-                <button className='butao11' onClick={mostrar}>VERIFICAR</button>
+            <div className='thebutton12'>
+                <button className='butao12' onClick={mostrar}>VERIFICAR</button>
             </div>
 
             <div className='resposta'>{resp}</div>

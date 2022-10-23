@@ -5,7 +5,7 @@ import Contar from "../../services";
 export default function Exercicio9() {
     const [inicio, setInicio] = useState();
     const [fim, setFim] = useState();
-    const [resp, setResp] = useState();
+    const [resp, setResp] = useState([]);
 
     function Listar() {
         setResp(Contar(inicio, fim));
@@ -34,7 +34,11 @@ export default function Exercicio9() {
                     <button className= "butao9"onClick={Listar}>VERIFICAR</button>
                 </div>
 
-                <div className="resposta9"> {resp}</div>
+                <span className="resposta9"> {resp.map((item) => (
+                            <div className="pra-baixo">
+                                {item}
+                            </div>
+                        ))}</span>
             </div>
         </div>
     );
