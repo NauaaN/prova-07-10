@@ -7,8 +7,7 @@ function calcularMedia(nota, alunos){
 export default function contarInput (input) {
     let x = [];
     for (let i = 1; i <= input; i++) {
-        x = [...x, i];
-        console.log(x)
+        x.push(i)
 
     }
         return x
