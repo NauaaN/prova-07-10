@@ -1,25 +1,39 @@
 import { useState, useEffect } from "react";
 import "./index.scss";
-import contarInput from "../../services/estudantes";
+import { contarInput, calcularMedia, calcMaior, calcMenor } from "../../services/estudantes";
+
 
 export default function Exercicio14() {
-    const [aluno, setAluno] = useState([]);
+    const [media, setMedia] = useState();
     const [input, setInput] = useState([]);
     const [notas, setNotas] = useState([]);
     const [resp, setResp] = useState([]);
+    const [maior, setMaior] = useState();
+    const [menor, setMenor] = useState();
 
     function validar() {
         let y = []
         y = [...y, notas]
-        console.log(y)
+
+        const a = calcularMedia(notas);
+        const b = calcMaior(notas);
+        const c = calcMenor(notas);
+        setMedia(a);
+        setMaior(b);
+        setMenor(c);
+        
     }
     function aparecerInputs() {
         setResp(contarInput(input));
     }
 
     function formarArr(posicao, qntd) {
-        notas[posicao] = qntd;
+        notas[posicao] = Number(qntd);
+        setNotas([...notas]);
+
     }
+
+    
 
 
     return (
@@ -45,6 +59,12 @@ export default function Exercicio14() {
                     </div>
                 </div>
                 <button className="butao14" onClick={validar}> CONCLUIR </button>
+                <div className="resposta">
+                    <p>Media:</p>{media}
+                    <p>Maior:</p>{maior}
+                    <p>Menor:</p>{menor}
+                </div>
+                
             </div>
         </div>
     );
