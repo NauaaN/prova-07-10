@@ -1,4 +1,4 @@
-.home-page{
+.home-page {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -8,25 +8,30 @@
     background-position: 0;
     background-repeat: no-repeat;
     background-size: 100%;
-    
+
 
 }
-.home{
+
+.home {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
 
+}
 
-}
-.txt{
+.txt {
     font-size: 3em;
+    margin: 0;
 }
-.txt1{
+
+.txt1 {
     font-size: 1.3em;
     margin: 0;
-    
+
 }
-.exericios{
+
+.exericios {
     margin: 1em;
     font-size: 1.3em;
     background-color: red;
@@ -35,14 +40,17 @@
     color: inherit;
     padding: 5px 15px;
 }
-.exericios:hover{
+
+.exericios:hover {
     background-color: black;
     color: white;
     transition: 0.4s;
 }
-.txt2{
+
+.txt2 {
     font-size: 1.5em;
 }
-::selection{
+
+::selection {
     background-color: rgba(255, 0, 0, 0.753);
 }

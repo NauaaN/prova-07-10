@@ -35,7 +35,6 @@ export default function Exercicio14() {
 
     
 
-
     return (
         <div className="homeex14">
             <div className="ex14">
